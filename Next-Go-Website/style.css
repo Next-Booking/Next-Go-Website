@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Condensed&display=swap');
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+
+colors
+02A4FF: Blue for buttons
+000000 : Black for text
+FFF2E0 : Cream for background
+EAFAFF: light blue for background
+EAFFF0: light green for background
+666666: grey for footer background
+Linear gradient of blue(1A94FF), red()
+2C2C2E: grey for save money save time subheading para, also for find your stay with ai technology and its subheading
+black for save money save time main heading
+
+*/
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul>li{
+    list-style: none;
+}
