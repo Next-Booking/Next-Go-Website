@@ -1,7 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Condensed&display=swap');
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+
+colors
+02A4FF: Blue for buttons
+000000 : Black for text
+FFF2E0 : Cream for background
+EAFAFF: light blue for background
+EAFFF0: light green for background
+666666: grey for footer background
+Linear gradient of blue(1A94FF), red()
+2C2C2E: grey for save money save time subheading para, also for find your stay with ai technology and its subheading
+black for save money save time main heading
+
+*/
+
+
+
+.DASHBOARD,.booking,.rooms,.services_tickets,.contact_support{
+    display: DASHBOARD;
+}
+
+
 /* dashboard.css */
 *{
     margin: 0;
     padding: 0;
+    background-color: 64CCC5;
+    font-family: "Inter", sans-serif;
+
+}
+
+body{
+    background-color: #F5F7F8;
+
+
 
 }
 .navbar {
@@ -71,18 +105,27 @@
     width: 250px;
     background-color: white;
     color: #333;
-    margin-top: 20px;
+    margin-top: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.Menu_items{
+    margin: 5px;
+}
+
+
 .menu {
     list-style: none;
-    padding: 0;
+    padding: 0px;
     margin-bottom: 50px;
+    
 }
 
 .Dashboard_items{
     padding: 0.5em;
+    background-color: #DAFFFB;
+   
+    
 }
 
 .menu a {
@@ -93,6 +136,7 @@
     padding: 10px 20px;
     transition: background-color 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #DDE6ED;
 }
 
 .menu a img {
@@ -111,7 +155,7 @@
 .window-box {
     
     padding: 20px;
-    background-color: #fff;
+    background-color:#F0F0F0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -169,6 +213,7 @@ input[type="text"] {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
+    background-color: white;
 }
 
 .sub-box-header {
