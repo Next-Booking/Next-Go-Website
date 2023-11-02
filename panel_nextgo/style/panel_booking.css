@@ -1,0 +1,207 @@
+/*all body properties*/
+*{
+    margin: 0;
+    padding: 0;
+    background-color: 64CCC5;
+    font-family: "Inter", sans-serif;
+
+}
+
+body{
+    background-color: #F5F7F8;
+}
+
+
+/*Navbar CSS*/
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white; /* Change background color to white */
+    color: #333; /* Change text color to dark */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow to the navbar */
+}
+
+.left img {
+    width: 50%;
+    margin-top: 1em;
+
+}
+
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    margin-right: 20px;
+    text-align: left;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.profile-role {
+    font-size: 12px;
+    color: #666; /* Change role text color to a grayish color */
+}
+
+.date-time {
+    margin-right: 20px;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.logout-button img {
+    width: 20px; /* Set the width of the logout icon */
+    height: 20px; /* Set the height of the logout icon */
+}
+
+.logout-button:hover img {
+    filter: invert(1); /* Invert the colors on hover */
+}
+
+/*this is css for left panel menu*/
+.dashrow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+}
+
+.left-panel {
+    width: 250px;
+    background-color: white;
+    color: #333;
+    margin-top: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 50px;
+    
+}
+
+.Menu_items{
+    margin: 5px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center; /* Center align the content vertically */
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #DDE6ED;
+}
+
+.menu a img {
+    width: 24px; /* Set the width of the icons */
+    height: 24px; /* Set the height of the icons */
+    margin-right: 10px; /* Add some spacing between the icon and text */
+}
+
+.menu a:hover {
+    background-color: #f5f5f5;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tab buttons in abovepanel */
+
+/* Style for the abovepanel */
+#abovepanel {
+    background-color: #f4f4f8; /* Light grey background for abovepanel */
+    padding: 10px 0;
+}
+
+.tab-button {
+    background-color: #8DCFFF;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background-color: white; /* White background for the active tab */
+    color: #333; /* Dark text color for the active tab */
+}
+
+.tab-button:hover {
+    background-color: #d3d3d3; /* Light grey background on hover */
+    color: #333; /* Dark text color on hover */
+}
+
+
+/* Style for inactive tab-content */
+.tab-content {
+    display: none; /* Hide inactive tab-content by default */
+  }
+  
+  /* Style for active tab-content */
+  .tab-content.active {
+    display: block; /* Show active tab-content */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Style for inactive subtab buttons */
+.subtab-button {
+    padding: 10px 20px;
+    background-color: #eee; /* Light grey background for inactive buttons */
+    border: 1px solid #ccc; /* Add a border to inactive buttons */
+    cursor: pointer;
+    outline: none;
+}
+
+/* Style for active subtab buttons */
+.subtab-button.active {
+    background-color: #007bff; /* Light blue background for active buttons */
+    color: #fff; /* White text color for active buttons */
+    border-color: #0056b3; /* Darker border color for active buttons */
+}
+
+/* Style for inactive subtab contents */
+.subtab-content {
+    display: none;
+}
+
+/* Style for active subtab content */
+.subtab-content.active {
+    display: block;
+    /* Add your styling for the active subtab content here */
+}
+
+  
+  

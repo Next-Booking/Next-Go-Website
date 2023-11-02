@@ -1,0 +1,197 @@
+/*all body properties*/
+*{
+    margin: 0;
+    padding: 0;
+    background-color: 64CCC5;
+    font-family: "Inter", sans-serif;
+
+}
+
+body{
+    background-color: #F5F7F8;
+}
+
+
+/*Navbar CSS*/
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white; /* Change background color to white */
+    color: #333; /* Change text color to dark */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow to the navbar */
+}
+
+.left img {
+    width: 50%;
+    margin-top: 1em;
+
+}
+
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    margin-right: 20px;
+    text-align: left;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.profile-role {
+    font-size: 12px;
+    color: #666; /* Change role text color to a grayish color */
+}
+
+.date-time {
+    margin-right: 20px;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.logout-button img {
+    width: 20px; /* Set the width of the logout icon */
+    height: 20px; /* Set the height of the logout icon */
+}
+
+.logout-button:hover img {
+    filter: invert(1); /* Invert the colors on hover */
+}
+
+
+/*this is css for left panel menu*/
+.dashrow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+}
+
+.left-panel {
+    width: 250px;
+    background-color: white;
+    color: #333;
+    margin-top: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 50px;
+    
+}
+
+.Menu_items{
+    margin: 5px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center; /* Center align the content vertically */
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #DDE6ED;
+}
+
+.menu a img {
+    width: 24px; /* Set the width of the icons */
+    height: 24px; /* Set the height of the icons */
+    margin-right: 10px; /* Add some spacing between the icon and text */
+}
+
+.menu a:hover {
+    background-color: #f5f5f5;
+}
+
+/*this is css for right panel*/
+/*this is css for table of rooms */
+
+/* General Styles */
+#roomsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#roomsTable thead {
+    background-color: #f4f4f8; /* Light grey background for the header */
+    color: #333; /* Dark text for contrast */
+}
+
+#roomsTable th, #roomsTable td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Light grey border for cells */
+    text-align: left;
+    background-color: #fff; /* White background for all cells */
+}
+
+#roomsTable tbody tr {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for the 'floating' effect */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+#roomsTable tbody tr:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* More pronounced shadow on hover */
+}
+
+/* Button Styles */
+.edit-room-btn, .rmv-room-btn, .add-room-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em; /* Adjusted font size for better legibility */
+}
+
+
+/* Button Styles */
+.edit-room-btn, .rmv-room-btn, .add-room-btn {
+    background-color: #25a5cf; /* Light blue background */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.edit-room-btn:hover, .rmv-room-btn:hover, .add-room-btn:hover {
+    background-color: #d3d3d3; /* Light grey background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+
+
+
+/* Responsive Table */
+@media screen and (max-width: 600px) {
+    #roomsTable th, #roomsTable td {
+        padding: 8px;
+    }
+    .edit-room-btn, .rmv-room-btn, .add-room-btn {
+        padding: 4px 8px;
+    }
+}

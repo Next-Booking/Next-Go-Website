@@ -1,29 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Condensed&display=swap');
-/* 
-font-family: 'Inter', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
-
-colors
-02A4FF: Blue for buttons
-000000 : Black for text
-FFF2E0 : Cream for background
-EAFAFF: light blue for background
-EAFFF0: light green for background
-666666: grey for footer background
-Linear gradient of blue(1A94FF), red()
-2C2C2E: grey for save money save time subheading para, also for find your stay with ai technology and its subheading
-black for save money save time main heading
-
-*/
-
-
-
-.DASHBOARD,.booking,.rooms,.services_tickets,.contact_support{
-    display: DASHBOARD;
-}
-
-
-/* dashboard.css */
+/*all body properties*/
 *{
     margin: 0;
     padding: 0;
@@ -34,10 +9,12 @@ black for save money save time main heading
 
 body{
     background-color: #F5F7F8;
-
-
-
 }
+
+
+/*Navbar CSS*/
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -53,6 +30,7 @@ body{
     margin-top: 1em;
 
 }
+
 
 .right {
     display: flex;
@@ -100,7 +78,15 @@ body{
     filter: invert(1); /* Invert the colors on hover */
 }
 
-/* left-panel.css */
+/*this is css for left panel menu*/
+.dashrow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+}
+
 .left-panel {
     width: 250px;
     background-color: white;
@@ -109,11 +95,6 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.Menu_items{
-    margin: 5px;
-}
-
-
 .menu {
     list-style: none;
     padding: 0px;
@@ -121,11 +102,8 @@ body{
     
 }
 
-.Dashboard_items{
-    padding: 0.5em;
-    background-color: #DAFFFB;
-   
-    
+.Menu_items{
+    margin: 5px;
 }
 
 .menu a {
@@ -150,95 +128,80 @@ body{
 }
 
 
-
-/* window-box.css */
-.window-box {
-    
+.contact-information-box {
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc; /* Light grey border */
     padding: 20px;
-    background-color:#F0F0F0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Or any other width */
+    margin: 0 auto; /* Center the box if desired */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+.contact-information-box h2 {
+    color: #333; /* Dark grey color for the title */
+    margin-bottom: 10px;
 }
 
-.options {
-    display: flex;
+.contact-information-box p {
+    color: #666; /* Lighter grey for the text */
+    line-height: 1.5; /* Spacing out the lines a bit for better readability */
 }
 
-.option {
+
+.contact-support-form {
+    /* Add your styles here */
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.social-media-icons a {
+    /* Add your styles here */
+    margin-right: 10px;
+    /* Insert actual images and style them as needed */
+}
+
+/* Style for form elements */
+form label,
+form input,
+form textarea,
+form button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
     padding: 10px 20px;
-    background-color: #f0f0f0;
+    background-color: #0056b3;
+    color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003d82;
+}
+
+.social-media-icons{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     margin-right: 10px;
 }
 
-.option.active {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.search-box {
-    display: flex;
-    align-items: center;
-}
-
-input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.social-media-icons a img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     margin-right: 10px;
-}
-
-.search-button {
-    padding: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.sub-boxes {
-    
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-}
-
-.sub-box {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-}
-
-.sub-box-header {
-    font-weight: bold;
-}
-
-.sub-box-content {
-    margin-top: 10px;
-}
-
-.view-all-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-.dashrow {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    
-    
 }
