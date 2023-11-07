@@ -6,61 +6,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/88bc3e9469.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="../Static files/icon/Nav_icon_nxtgo.svg" alt="Nxtgo_icon">
-            <ul class="nav_icons">
-                <li class="nav_list"><a href="#" class="nav_link"></a></li>
-                <li class="nav_list"><a href="#" class="nav_link"></a></li>
-                <li class="nav_list"><a href="#" class="nav_link"></a></li>
-            </ul>
-            <a href="" class="navbar_buttons_links" id="Log in"><button class="navbar_buttons">Log in</button></a>
-            <a href="" class="navbar_buttons_links" id="Sign up"><button class="navbar_buttons">Sign up</button></a>
+            <img class="nav__img" src="../Static files/icon/Nxtgo-navbar-icon.png" alt="Nxtgo_icon">
+            <div class="nav__btns">
+                <div class="btns__icons">
+                    <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                    <i class="fa-regular fa-bell" style="color: #000000;"></i>
+                    <i class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="btns__login-signup">
+                    <button class="login-signup__btn" id = "login_button" href = "#">Log in</button>
+                    <button class="login-signup__btn" id = "signup_button" href = "#">Sign up</button>
+                </div>
+
+            </div>
         </nav>
-        <section class="Booking_and_map_section">
-            <div class="Booking_section">
-                <form action="" class="Booking_form">
-                    <input type="text" placeholder="Where do you want to go?">
-                    <input type="date" placeholder="When do you want to go?">
-                    <input type="text" placeholder="How many people?">
-                    <button class="Go_button">Go</button>
-                </form>
-            </div>
-            <div class="Map_section">
-                <img src="../Static files/Images/Map_image.png" alt="Map">
-            </div>
+        <section class="header__booking-map">
+            <section class='booking-map__booking'>
+                <input class="booking__input booking__input--place" type="text" placeholder="Where do you want to go?">
+                <div class="booking__container">
+                    <div class="container__input container__input--dates">
+                        Check in - Check out
+                    </div>
+                    <div class=" container__input container__input--rooms-guest">Rooms?</div>
+                </div>
+                <div class="booking__rooms-guest">
+                    <div class="rooms-guest__entity rooms-guest__entity--adult">
+                        <p>Adults</p>
+                        <div class="rooms-guest__entity-input">
+                            <div class="add add--adult">+</div>
+                            <div class="entity-input__value entity-input__value--adult">2</div>
+                            <div class="subtract subtract--adult">-</div>
+                        </div>
+                    </div>
+                    <div class="rooms-guest__entity rooms-guest__entity--child">
+                        <p>Childrens</p>
+                        <div class="rooms-guest__entity-input">
+                            <div class="add add--child">+</div>
+                            <div class="entity-input__value entity-input__value--child">2</div>
+                            <div class="subtract subtract--child">-</div>
+                        </div>
+                    </div>
+                    <div class="rooms-guest__entity rooms-guest__entity--rooms">
+                        <p>Rooms</p>
+                        <div class="rooms-guest__entity-input">
+                            <div class="add add--rooms">+</div>
+                            <div class="entity-input__value entity-input__value--rooms">2</div>
+                            <div class="subtract subtract--rooms">-</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking__calenders">
+                    <div class="calenders__calender calenders__calender--from">
+                        <div class="calender__month-cont">
+                            <div class="month-cont__larrow">
+                                <i class="fa-solid fa-angle-up fa-rotate-270" style="color: #0e1861;"></i>
+                            </div>
+                            <div class="month-cont__month month-cont__month--from"></div>
+                        </div>
+                        <ul class="calender__days">
+                            <li class="days__day">Sun</li>
+                            <li class="days__day">Mon</li>
+                            <li class="days__day">Tue</li>
+                            <li class="days__day">Wed</li>
+                            <li class="days__day">Thu</li>
+                            <li class="days__day">Fri</li>
+                            <li class="days__day">Sat</li>    
+                        </ul>
+                        <div class="calender__dates calender__dates--from">
+
+                        </div>
+                    </div>
+                    <div class="calenders__calender calenders__calender--to">
+                        <div class="calender__month-cont">
+                            <div class="month-cont__month month-cont__month--to"></div>
+                            <div class="month-cont__rarrow">
+                                <i class="fa-solid fa-angle-up fa-rotate-90" style="color: #0e1861;"></i>     
+                               
+                            </div>
+                        </div>
+                        <ul class="calender__days">
+                            <li class="days__day">Sun</li>
+                            <li class="days__day">Mon</li>
+                            <li class="days__day">Tue</li>
+                            <li class="days__day">Wed</li>
+                            <li class="days__day">Thu</li>
+                            <li class="days__day">Fri</li>
+                            <li class="days__day">Sat</li>    
+                        </ul>
+                        <div class="calender__dates calender__dates--to">
+
+                        </div>
+                    </div>
+                </div>
+                <button class="booking__btn">Go
+                    <i class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i>
+                </button>
+            </section>
+            <hr>
+            <section class="booking-map__map">
+                <img src="../Static files/Images/Map_wide_image.png" alt="">
+            </section>
         </section>
     </header>
     <main>
-        <section class="ai_section">
-            <article class="ai_section-text">
-                <h2>World's First AI Powered Booking Travel Going World with</h2>
-                <img src="../Static files/icon/Nextgo_ai.com_icon.png" alt="Nxtgoai.com_icon">
-                <p>Travel far and wide, let your journey be guided by the wisdom of AI's insights, as you explore the world with
+        <section class="main__ai-section">
+            <article class="ai-section__ai-text">
+                <h2 class="ai-text__heading">World's First AI Powered Booking Travel Going World with</h2>
+                <img class="ai-text__image" src="../Static files/icon/Nextgo_ai.com_icon.png" alt="Nxtgoai.com_icon">
+                <p class="ai-text__para">Travel far and wide, let your journey be guided by the wisdom of AI's insights, as you explore the world with
                     eyes both human and digital.</p>
             </article>
-            <figure class="ai_section-image">
-                <img id = "ai_section-image_left" src="../Static files/Images/Phone_image.png" alt="Ai_phone_image">
-                <img id = "ai_section-image_left" src="../Static files/Images/Phone_image_without_bezels.png" alt="Ai phone image without bezels">
+            <figure class="ai-section__ai-phoneimg">
+                <img id = "ai-phoneimg__lft" src="../Static files/Images/Phone_image.png" alt="Ai_phone_image">
+                <img id = "ai-phoneimg__rgt" src="../Static files/Images/Phone_image_without_bezels.png" alt="Ai phone image without bezels">
             </figure>
         </section>
-        <section class="discover_section">
-            <section class="city_section"></section>
-            <section class="trending_section"></section>
-        </section>
-        <section class="find_section">
+        <section class="main__discover">
+            <section class="discover__city"></section>
 
         </section>
-        <section class="top_hotel_section">
+        <section class="main__find">
 
         </section>
-        <section class="ai_explore_section">
-            
+        <section class="main__top-hotels">
+
+        </section>
+        <section class="main__listing">
+            <img src="../Static files/icon/hand_with_house.svg" alt="listing_img">
+            <article>
+                <h2>
+                    Listing your Property
+                </h2>
+                <p>
+                    Easy & Fast and get up 2x Booking your property
+                </p>
+            </article>
+
         </section>
     </main>
+    <footer>
+        <div>
+            <section  class="social-section footer__sections"> 
+                <h4>
+                    Nextgo.AI
+                </h4>
+                <ul  class="footer__list">
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                </ul>
+            </section>
+            <section  class="resource-section footer__sections">
+                <h4>
+                    Resources
+                </h4>
+                <ul  class="footer__list">
+                    <li>Blog</li>
+                    <li>Support</li>
+                    <li>Downloads</li>
+                    <li>What's new</li>
+                    <li>Careers</li>
+                    <li>Our story</li>
+                    <li>Partners</li>
+                    <li>Privacy</li>
+                    <li>Status</li>
+                </ul>
+            </section>
+            <section  class="business-section footer__sections">
+                <h4>Business</h4>
+                <ul class="footer__list">
+                    <li>Become Hoster</li>
+                    <li>Pricing</li>
+                    <li>Enterprise</li>
+                    <li>Customer Care</li>
+                    <li>Security</li>
+                    <li>Integrations</li>
+                    <li>Contact</li>
+                </ul>
+            </section>
+            <section  class="company-section footer__sections" >
+                <h4>
+                    Company
+                </h4>
+                <ul class="footer__list">
+                    <li>About us</li>
+                    <li>Term & Condition</li>
+                    <li>Privacy Policy</li>
+                    <li>Help Center</li>
+                </ul>
+            </section>
+        </div>
+        <div class="language-footer">
+            
+        </div>
+    </footer>
+    <script src="calender.js"></script>
+    <script src="rooms_and_guest_input.js"></script>
 </body>
 
 </html>
