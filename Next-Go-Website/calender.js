@@ -69,6 +69,9 @@ user_input.addEventListener("click", function(e){
     if(calstyle.display == "none"){
 
         calender.style.display = "block"
+        if(screen.width>700){
+            calender.style.display = "flex"
+        }
     }
     else{
         calender.style.display = "none"
@@ -76,6 +79,7 @@ user_input.addEventListener("click", function(e){
     }
     
 })
+
 
 
 
@@ -129,7 +133,7 @@ for(let i =1; i<43; i++){
     }
     
     else if(started == true){
-        if(input_date < current_date.getDate() && month == current_date.getMonth()){
+        if(input_date < current_date.getDate() && month == current_date.getMonth() && year == current_date.getFullYear()){
             inner_date.style.color = "rgba(128, 128, 128)"
             date.classList.add("date-row__date-past")
          }
@@ -224,7 +228,7 @@ for(let i =1; i<43; i++){
  }
 }
 function UpdateCal(bool){
-    if(calen_month == current_date.getMonth() && bool == false){
+    if(calen_month == current_date.getMonth() && bool == false && calen_year == current_date.getFullYear()){
         return
     }
     while(dates_from.firstChild || dates_to.firstChild){
