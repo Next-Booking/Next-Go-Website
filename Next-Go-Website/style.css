@@ -29,6 +29,9 @@ body{
     --border-color:rgba(128, 128, 128, 0.222);
     --sky-blue:#02A4FF;
     --hover-skyblue:#008ddf;
+    --cream: #FFF2E0;
+    --l-blue: #EAFAFF;
+    --l-green: #EAFFF0;
 }
 a{
     text-decoration: none;
@@ -54,7 +57,12 @@ input{
 
 }
 main{
-    margin-top: 1.5em;
+    margin-top: 5em;
+    
+}
+img{
+    display: block;
+    max-width: 100%;
 }
 .nav__img{
     width: 50.71px;
@@ -76,6 +84,9 @@ main{
     font-weight: 700;
     font-family: 'Inter', sans-serif;
 }
+.login-signup__btn:hover{
+    background-color: rgba(220, 220, 220, 0.295);
+}
 #signup_button{
     margin-left: 1.4em;
 
@@ -90,7 +101,45 @@ main{
     padding: 1.5em;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.458);
     border-radius: 3px;
+ 
+}
+.header__offers{
+    padding: 1em 0.7em ;
+    padding-bottom: 0;
+}
+.offers__section{
+    margin-top: 0.5em;
+}
+.offers__section>div{
+    border: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+}
+.offers__text{
+    padding: 1.6em;
+    width: 70%;
+    
+}
+.offers__img{
+    width: 30%;
+}
+.offers__bold{
+    font-weight: 1000;
+    font-size: calc(1rem + 0.9vw) ;
+}
+.offers__not-bold{
+    font-size: 0.75rem;
+}
+.offers__not-bold--bottom{
+    margin-bottom: 0.5em;
+}
 
+.offers__not-bold--top{
+    margin-top: 0.5em;
+}
+
+.offers__heading{
+    font-size: 1.3rem;
 }
 .booking-map__booking{
     margin-bottom: 1.5em;
@@ -166,7 +215,7 @@ main{
     border-radius: 3px;
     padding: 0.5em;
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     margin: auto;
     text-align: center;
     user-select: none;
@@ -265,7 +314,10 @@ main{
 
 .main__ai-section{
     padding: 1.5em 2em;
+    padding-top: 0;
     padding-bottom: 0.1em;
+    width: 90%;
+    margin: auto;
 }
 .ai-text__image{
     width: 70%;
@@ -287,6 +339,41 @@ main{
     top: 20%;
     left: 50%;
 }
+.ads-section{
+    padding: 0 2em;
+    padding-top: 3.5em;
+    padding-right: 0;
+}
+.main__findstay{
+    background-color:var(--cream) ;
+}
+.main__trip-planner{
+    background-color: var(--l-blue);
+}
+.main__customize-stay{
+    background-color: var(--l-green);
+}
+.ads-heading1{
+    margin-bottom: 0.4em;
+}
+.ads-heading2{
+    font-weight:100;
+
+    margin-bottom: 0.8em;
+}
+.ads-text{
+    font-size: 0.9rem;
+    margin-bottom: 2em;
+    line-height: 1.6em;
+    padding-right: 2em;
+}
+
+
+
+
+
+
+
 .main__listing{
     
     justify-content: space-between;
@@ -304,6 +391,9 @@ main{
     margin-top: 1em;
     margin: auto;
     text-align: center;
+}
+.main__listing p{
+    margin-top: 0.5em;
 }
 footer{
     padding: 2em 0;
@@ -326,5 +416,230 @@ footer>div{
 .footer__sections{
     width: 40%;
     margin-bottom: 2em;
+}
+footer li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (min-width: 750px) {
+    .header__booking-map{
+        display: flex;
+        justify-content: space-between;
+    }
+    .booking-map__booking{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin-bottom: 0;
+        padding: 0.5em;
+        justify-content: center;
+    }
+    .booking-map__map{
+        width: 45%;
+    }
+    .booking__container, .booking__input, .booking__btn{
+        margin: auto;
+    }
+    .booking__input{
+        font-size: calc(0.75rem + 0.2vw);
+    }
+     .booking__container{
+        width: 100%;
+     }
+     .container__input{
+        font-size: calc(0.75rem);
+     }
+    .booking-map__map>img{
+        margin-top: 0;
+    }
+    .header__booking-map{
+        position: relative;
+    }
+    .offers__section{
+        display: flex;
+        justify-content: space-between;
+   
+    }
+    .offers__section>div{
+        width: 49%;
+    }
+    .offers__not-bold{
+        font-size: 0.7rem;
+        
+    }
+    .offers__bold{
+        font-size: calc(1.1rem + 0.3vw);
+        font-weight: 600;
+    }
+
+
+
+    .booking__calenders{
+    
+        width: 90%;
+        justify-content: space-between;
+        top: 59%;
+        left: 0;
+        max-width: 700px;
+    }
+    .calenders__calender{
+        width: 45%;
+        
+    }
+    .booking__rooms-guest{
+        width: 40%;
+        max-width: 352px;
+        left: 20%;
+        top: 57%;
+    }
+    .main__ai-section{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ai-section__ai-text{
+        width: 50%;
+    }
+    .ai-section__ai-text>p{
+        font-size: 1.2rem;
+    }
+    .ai-section__ai-phoneimg{
+        width: 45%;
+    }
+    .main__listing{
+        display: flex;
+        
+    }
+    .main__listing>img{
+        width: 15%;
+        margin: 0;
+        margin-left: auto;
+    }
+    .main__listing>article{
+        width: 50%;
+        text-align: left;
+    }
+    .ads-content{
+        display: flex;
+    }
+    .ads-text{
+        width: 35%;
+    }
+    .ads-img{
+        width: 55%;
+    }
+    .ads-img--long{
+        width: 65%;
+     
+    }
+
+    .ads-section{
+        padding-top: 6em;
+        padding-left: 3em;
+    }
+
+    .ads-heading2{
+        font-size: 3rem;
+    }
+
+
+
+
+
+
+
+
+
+
+    footer>div{
+        width: 80%;
+        flex-wrap: nowrap;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .footer__sections+.footer__sections{
+        margin-left: auto;
+    }
+  
+}
+@media (min-width: 1000px) {
+    .container__input{
+        width: 45%;
+  
+    }
+    .container__input{
+        font-size: calc(0.75rem + 0.2vw);
+     }
+    .container__input--dates{
+        border-radius: 3px;
+    }
+    .container__input--rooms-guest{
+        border: 3px solid var(--sky-blue);
+        border-radius: 3px;
+    }
+    .booking__btn{
+        padding: 0.6em 5em;
+        font-size: 1.05rem;
+    }
+    .booking__container, .booking__input, .booking__btn{
+       margin: 0 auto;
+    }
+    .booking__container, .booking__input{
+        margin-bottom: 3em;
+  
+    }
+    .booking__input{
+        padding: 0.8em 1.3em;
+    }
+    .container__input{
+        padding: 0.8em 1.3em;
+        border: 2px solid var(--sky-blue);
+    }
+    .booking__input{
+        width: 65%;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .ai-section__ai-text>p{
+        font-size: 1.5rem;
+    }
+    .footer__sections{
+        width: 15%;
+    }
+    .login-signup__btn{
+        padding: 1em;
+        font-size: 0.8rem;
+    }
+    .nav__img{
+        width: 7%;
+        height: auto;
+        margin-left: 1em;
+    }
+    .ads-heading2{
+        font-size: 3rem;
+    }
+    .ads-text{
+        font-size: 1.05rem;
+    }
+
+}
+@media(min-width:1200px){
+    .ai-section__ai-text>p{
+        font-size: 1.8rem;
+    }
+    .ads-text{
+        font-size: 1.3rem;
+    }
+    .ads-heading2{
+        font-size: 4rem;
+    }
+    .offers__bold{
+        font-size: 1.7rem;
+    }
+    .offers__not-bold{
+        font-size: 0.8rem;
+    }
 }
 
