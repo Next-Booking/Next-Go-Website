@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Condensed&display=swap');
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+
+colors
+02A4FF: Blue for buttons
+000000 : Black for text
+FFF2E0 : Cream for background
+EAFAFF: light blue for background
+EAFFF0: light green for background
+666666: grey for footer background
+Linear gradient of blue(1A94FF), red()
+2C2C2E: grey for save money save time subheading para, also for find your stay with ai technology and its subheading
+black for save money save time main heading
+
+*/
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --border-color:rgba(128, 128, 128, 0.222);
+    --sky-blue:#02A4FF;
+    --hover-skyblue:#008ddf;
+    --cream: #FFF2E0;
+    --l-blue: #EAFAFF;
+    --l-green: #EAFFF0;
+}
+a{
+    text-decoration: none;
+}
+ul>li{
+    list-style: none;
+}
+hr{
+    color:var(--border-color);
+}
+nav{
+    display: flex;
+    padding: 1em 1.2em;
+    border-bottom: 2px solid var(--border-color);
+    align-items: center;
+}
+button:hover{
+    cursor: pointer;
+}
+input{
+    outline: none;
+    color: gba(0, 0, 0, 0.56);
+
+}
+main{
+    margin-top: 5em;
+    
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.nav__img{
+    width: 50.71px;
+    height: 20px;
+
+}
+.nav__btns{
+    margin-left: auto;
+}
+.btns__icons{
+    display: none;
+}
+.login-signup__btn{
+    padding: 0.5em;
+    background-color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 3px;
+    font-size: 0.6rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+.login-signup__btn:hover{
+    background-color: rgba(220, 220, 220, 0.295);
+}
+#signup_button{
+    margin-left: 1.4em;
+
+
+}
+
+.header__booking-map{
+
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5em;
+    padding: 1.5em;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.458);
+    border-radius: 3px;
+ 
+}
+.header__offers{
+    padding: 1em 0.7em ;
+    padding-bottom: 0;
+}
+.offers__section{
+    margin-top: 0.5em;
+}
+.offers__section>div{
+    border: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+}
+.offers__text{
+    padding: 1.6em;
+    width: 70%;
+    
+}
+.offers__img{
+    width: 30%;
+}
+.offers__bold{
+    font-weight: 1000;
+    font-size: calc(1rem + 0.9vw) ;
+}
+.offers__not-bold{
+    font-size: 0.75rem;
+}
+.offers__not-bold--bottom{
+    margin-bottom: 0.5em;
+}
+
+.offers__not-bold--top{
+    margin-top: 0.5em;
+}
+
+.offers__heading{
+    font-size: 1.3rem;
+}
+.booking-map__booking{
+    margin-bottom: 1.5em;
+}
+.booking-map__map>img{
+    width: 100%;
+    margin-top: 1.5em;
+}
+.booking__container{
+    display: flex;
+    margin: 1em 0;
+    color: rgba(0, 0, 0, 0.56) ;
+
+ 
+}
+.booking__input{
+    outline: 2.5px solid rgb(2, 164, 255);
+    border: none;
+    padding: 0.5em;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    text-align: center;
+ 
+}
+.booking__input--place{
+    display: block;
+    width: 80%;
+    margin: auto;    
+    
+}
+
+.booking__rooms-guest{
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.623);
+    width: 80%;
+    padding: 1em;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    top: 193px;
+    right: 30px;
+    display: none;
+}
+.rooms-guest__entity{
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.rooms-guest__entity-input{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgba(2, 162, 255, 0.4);
+    padding: 0.5em 0.2em;
+    align-items: center;
+    border-radius: 3px;
+}
+.add, .subtract{
+
+    width: 20px;
+
+    text-align: center;
+    user-select: none;
+}
+.add:hover, .subtract:hover{
+    background-color: rgb(2, 162, 255);
+    cursor: pointer;
+    color: white;
+}
+.container__input{
+    border: 2.5px solid rgb(2, 162, 255);
+    border-radius: 3px;
+    padding: 0.5em;
+    width: 100%;
+    font-size: 0.7rem;
+    margin: auto;
+    text-align: center;
+    user-select: none;
+}
+.container__input--dates{
+    border-radius: 3px 0px 0px 3px;
+
+}
+.container__input:hover{
+    cursor: pointer;
+}
+.container__input--rooms-guest{
+    border-left: none;
+    border-radius: 0px 3px 3px 0px;
+}
+.booking__btn{
+    padding: 0.4em 2.5em;
+    background-color: rgb(2, 164, 255) ;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 1rem;
+    margin: auto;
+    display: block;
+}
+.booking__btn:hover{
+    background-color:rgb(5, 145, 227) ;
+}
+.booking__calenders{
+
+    position: absolute;
+    width: 85%;
+    left: 7.5%;
+    top: 18%;
+    z-index: 2;
+    background-color: white;
+    padding: 0.6em 0.6em;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.623);
+    display: none;
+
+
+}
+
+.calenders__calender--from{
+    margin-bottom: 1em;
+}
+.calender__month-cont{
+    display: flex;
+    align-items: center;
+    padding: 0.8em 0.1em;
+}
+.month-cont__month{
+    width: 100%;
+    text-align: center;
+}
+.month-cont__larrow, .month-cont__rarrow{
+    padding: 0.3em;
+}
+.month-cont__rarrow:hover, .month-cont__larrow:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.059);
+}
+.calender__days{
+    list-style: none;
+    display: flex;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 2em 0;
+
+}
+
+.days__day{
+    
+    width: 100%;
+    text-align: center;
+}
+.dates__date-row{
+    display: flex;
+}
+.date-row__date, .date-row__empty, .date-row__date-past{
+
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+}
+.date-row__date:hover{
+    
+    cursor: pointer;
+
+}
+
+.main__ai-section{
+    padding: 1.5em 2em;
+    padding-top: 0;
+    padding-bottom: 0.1em;
+    width: 90%;
+    margin: auto;
+}
+.ai-text__image{
+    width: 70%;
+}
+.ai-text__para{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.ai-section__ai-phoneimg{
+    display: flex;
+    margin-top: 1.3em;
+    position: relative;
+    overflow: hidden;
+}
+.ai-section__ai-phoneimg>*{
+    width: 50%;
+}
+#ai-phoneimg__rgt{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+.ads-section{
+    padding: 0 2em;
+    padding-top: 3.5em;
+    padding-right: 0;
+}
+.main__findstay{
+    background-color:var(--cream) ;
+}
+.main__trip-planner{
+    background-color: var(--l-blue);
+}
+.main__customize-stay{
+    background-color: var(--l-green);
+}
+.ads-heading1{
+    margin-bottom: 0.4em;
+}
+.ads-heading2{
+    font-weight:100;
+
+    margin-bottom: 0.8em;
+}
+.ads-text{
+    font-size: 0.9rem;
+    margin-bottom: 2em;
+    line-height: 1.6em;
+    padding-right: 2em;
+}
+
+
+
+
+
+
+
+.main__listing{
+    
+    justify-content: space-between;
+    background-image: linear-gradient(45deg,rgba(213, 82, 39, 0.673), #0c4b82a0 ); 
+    color: white;
+    padding: 1.5em;
+}
+.main__listing>img{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+.main__listing>article{
+    width: 100%;
+    margin-top: 1em;
+    margin: auto;
+    text-align: center;
+}
+.main__listing p{
+    margin-top: 0.5em;
+}
+footer{
+    padding: 2em 0;
+    color: white;
+    background-color: #666666;
+}
+footer>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.footer__list{
+    padding-top: 0.5em;
+}
+.footer__list>li{
+    margin-bottom: 0.8em;
+}
+.footer__sections{
+    width: 40%;
+    margin-bottom: 2em;
+}
+footer li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (min-width: 750px) {
+    .header__booking-map{
+        display: flex;
+        justify-content: space-between;
+    }
+    .booking-map__booking{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin-bottom: 0;
+        padding: 0.5em;
+        justify-content: center;
+    }
+    .booking-map__map{
+        width: 45%;
+    }
+    .booking__container, .booking__input, .booking__btn{
+        margin: auto;
+    }
+    .booking__input{
+        font-size: calc(0.75rem + 0.2vw);
+    }
+     .booking__container{
+        width: 100%;
+     }
+     .container__input{
+        font-size: calc(0.75rem);
+     }
+    .booking-map__map>img{
+        margin-top: 0;
+    }
+    .header__booking-map{
+        position: relative;
+    }
+    .offers__section{
+        display: flex;
+        justify-content: space-between;
+   
+    }
+    .offers__section>div{
+        width: 49%;
+    }
+    .offers__not-bold{
+        font-size: 0.7rem;
+        
+    }
+    .offers__bold{
+        font-size: calc(1.1rem + 0.3vw);
+        font-weight: 600;
+    }
+
+
+
+    .booking__calenders{
+    
+        width: 90%;
+        justify-content: space-between;
+        top: 59%;
+        left: 0;
+        max-width: 700px;
+    }
+    .calenders__calender{
+        width: 45%;
+        
+    }
+    .booking__rooms-guest{
+        width: 40%;
+        max-width: 352px;
+        left: 20%;
+        top: 57%;
+    }
+    .main__ai-section{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ai-section__ai-text{
+        width: 50%;
+    }
+    .ai-section__ai-text>p{
+        font-size: 1.2rem;
+    }
+    .ai-section__ai-phoneimg{
+        width: 45%;
+    }
+    .main__listing{
+        display: flex;
+        
+    }
+    .main__listing>img{
+        width: 15%;
+        margin: 0;
+        margin-left: auto;
+    }
+    .main__listing>article{
+        width: 50%;
+        text-align: left;
+    }
+    .ads-content{
+        display: flex;
+    }
+    .ads-text{
+        width: 35%;
+    }
+    .ads-img{
+        width: 55%;
+    }
+    .ads-img--long{
+        width: 65%;
+     
+    }
+
+    .ads-section{
+        padding-top: 6em;
+        padding-left: 3em;
+    }
+
+    .ads-heading2{
+        font-size: 3rem;
+    }
+
+
+
+
+
+
+
+
+
+
+    footer>div{
+        width: 80%;
+        flex-wrap: nowrap;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .footer__sections+.footer__sections{
+        margin-left: auto;
+    }
+  
+}
+@media (min-width: 1000px) {
+    .container__input{
+        width: 45%;
+  
+    }
+    .container__input{
+        font-size: calc(0.75rem + 0.2vw);
+     }
+    .container__input--dates{
+        border-radius: 3px;
+    }
+    .container__input--rooms-guest{
+        border: 3px solid var(--sky-blue);
+        border-radius: 3px;
+    }
+    .booking__btn{
+        padding: 0.6em 5em;
+        font-size: 1.05rem;
+    }
+    .booking__container, .booking__input, .booking__btn{
+       margin: 0 auto;
+    }
+    .booking__container, .booking__input{
+        margin-bottom: 3em;
+  
+    }
+    .booking__input{
+        padding: 0.8em 1.3em;
+    }
+    .container__input{
+        padding: 0.8em 1.3em;
+        border: 2px solid var(--sky-blue);
+    }
+    .booking__input{
+        width: 65%;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .ai-section__ai-text>p{
+        font-size: 1.5rem;
+    }
+    .footer__sections{
+        width: 15%;
+    }
+    .login-signup__btn{
+        padding: 1em;
+        font-size: 0.8rem;
+    }
+    .nav__img{
+        width: 7%;
+        height: auto;
+        margin-left: 1em;
+    }
+    .ads-heading2{
+        font-size: 3rem;
+    }
+    .ads-text{
+        font-size: 1.05rem;
+    }
+
+}
+@media(min-width:1200px){
+    .ai-section__ai-text>p{
+        font-size: 1.8rem;
+    }
+    .ads-text{
+        font-size: 1.3rem;
+    }
+    .ads-heading2{
+        font-size: 4rem;
+    }
+    .offers__bold{
+        font-size: 1.7rem;
+    }
+    .offers__not-bold{
+        font-size: 0.8rem;
+    }
+}
+
